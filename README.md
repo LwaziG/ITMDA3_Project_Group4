@@ -1,20 +1,19 @@
-![Expense Manager Android](docs/images/splash.png)
+<!--![Expense Manager Android](docs/images/splash.png)
 
 <p align="center">
   <a href="https://play.google.com/store/apps/details?id=com.naveenapps.expensemanager" target="_blank">
     <img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png' width="320" />
   </a>
-</p>
+</p>-->
 
-Expense Manager
+PennyWise
 ==================
 [![API](https://img.shields.io/badge/API-21%2B-brightgreen.svg?style=flat)](https://android-arsenal.com/api?level=21)
 [![Build](https://github.com/nkuppan/expensemanager/actions/workflows/build.yml/badge.svg)](https://github.com/nkuppan/expensemanager/actions/workflows/build.yml)
 
-This is the repository for the [Expense Manager](https://expensemanager.naveenapps.com/) app. It is
-a **work in progress** 🚧.
+This is the repository for the [PennyWise]🚧.
 
-**Expense Manager** is a fully functional Android app built entirely with Kotlin and Jetpack
+**PennyWise** is a fully functional Android app built entirely with Kotlin and Jetpack
 Compose. It follows Android design and development best practices and is intended to be a useful
 reference for developers. As a running app, it's intended to help developers keep up-to-date with
 the world of Android development by providing regular news updates.
@@ -52,12 +51,11 @@ Expense Manager attempts to make use of the latest Android libraries and best pr
   and [theming](https://m3.material.io/theme-builder)
 * Full [Dark Theme](https://m3.material.io/styles/color/choosing-a-scheme) support
 
-## Contributions
+## Contributors
+Rayhan Alobwede  
+Aphumelele Sineke  
+Zizipho Kakaza  
+Lwazi Gumede 
 
 Please feel free to file an issue for errors, suggestions or feature requests. Pull requests are
 also encouraged.
-
-# License
-
-**Expense Manager** is distributed under the terms of the Apache License (Version 2.0). See the
-[license](LICENSE) for more information.
