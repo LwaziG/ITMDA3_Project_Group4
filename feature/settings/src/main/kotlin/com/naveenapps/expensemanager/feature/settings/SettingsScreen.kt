@@ -99,7 +99,7 @@ private fun SettingsScreenContent(
     onAction: (SettingAction) -> Unit,
 ) {
     Column(modifier = modifier) {
-        SettingsItem(
+        /* SettingsItem(
             modifier = Modifier
                 .clickable {
                     onAction.invoke(SettingAction.ShowThemeSelection)
@@ -124,7 +124,7 @@ private fun SettingsScreenContent(
             title = stringResource(id = R.string.currency),
             description = "${selectedCurrency.name}(${selectedCurrency.symbol})",
             imageVector = Icons.Outlined.Payments,
-        )
+        ) */
         SettingsItem(
             modifier = Modifier
                 .clickable {
@@ -136,7 +136,7 @@ private fun SettingsScreenContent(
             description = stringResource(id = R.string.selected_daily_reminder_time),
             imageVector = Icons.Outlined.EditNotifications,
         )
-        SettingsItem(
+        /*SettingsItem(
             modifier = Modifier
                 .clickable {
                     onAction.invoke(SettingAction.OpenExport)
@@ -157,7 +157,7 @@ private fun SettingsScreenContent(
             title = stringResource(id = R.string.rate_us),
             description = stringResource(id = R.string.rate_us_message),
             imageVector = Icons.Outlined.RateReview,
-        )
+        )*/
         SettingsItem(
             modifier = Modifier
                 .clickable {
@@ -165,9 +165,9 @@ private fun SettingsScreenContent(
                 }
                 .padding(top = 8.dp, bottom = 8.dp)
                 .fillMaxWidth(),
-            title = stringResource(id = R.string.advanced),
-            description = stringResource(id = R.string.advanced_config_message),
-            imageVector = Icons.Outlined.SettingsApplications,
+            title = stringResource(id = R.string.rate_us),
+            description = stringResource(id = R.string.rate_us_message),
+            imageVector = Icons.Outlined.RateReview,
         )
         SettingsItem(
             modifier = Modifier

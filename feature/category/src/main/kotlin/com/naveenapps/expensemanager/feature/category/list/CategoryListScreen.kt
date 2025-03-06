@@ -144,7 +144,7 @@ private fun CategoryListScreenContent(
                     .wrapContentSize()
                     .align(Alignment.Center),
                 emptyItemText = stringResource(id = R.string.no_category_available),
-                icon = com.naveenapps.expensemanager.core.designsystem.R.drawable.ic_no_category,
+                icon = com.naveenapps.expensemanager.core.designsystem.R.drawable.wallet,
             )
         } else {
             LazyColumn {

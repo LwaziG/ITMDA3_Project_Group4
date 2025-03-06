@@ -14,7 +14,11 @@ import androidx.compose.foundation.lazy.LazyRow
 import androidx.compose.foundation.lazy.items
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Add
+import androidx.compose.material.icons.outlined.Info
 import androidx.compose.material.icons.outlined.Settings
+import androidx.compose.material.icons.rounded.Settings
+import androidx.compose.material.icons.rounded.Info
+import androidx.compose.material3.Button
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.FloatingActionButton
 import androidx.compose.material3.Icon
@@ -27,6 +31,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
@@ -87,7 +92,7 @@ private fun DashboardScaffoldContent(
                     }
                 ) {
                     Icon(
-                        imageVector = Icons.Outlined.Settings,
+                        imageVector = Icons.Outlined.Info,
                         contentDescription = stringResource(id = R.string.settings),
                     )
                 }
@@ -140,7 +145,7 @@ private fun DashboardScreenContent(
                     .padding(start = 16.dp, end = 16.dp, top = 16.dp),
             )
         }
-        item {
+        /*item {
             DashboardWidgetTitle(
                 modifier = Modifier
                     .fillMaxWidth()
@@ -172,8 +177,7 @@ private fun DashboardScreenContent(
                             amount = it.amount.amountString ?: "",
                             availableCreditLimit = it.availableCreditLimit?.amountString ?: "",
                             amountTextColor = colorResource(id = it.amountTextColor),
-                            backgroundColor = it.storedIcon.backgroundColor.toColor()
-                                .copy(alpha = .1f),
+                            backgroundColor = Color(0xFFFAD9E6),
                         )
                     }
                 }
@@ -188,11 +192,18 @@ private fun DashboardScreenContent(
                         .height(200.dp)
                 )
             }
-        }
+        }*/
+
+        /*Button(onClick = {}){
+                Text(text = "View All")
+            }*/
         item {
+
+
             CategoryAmountView(
                 modifier = Modifier
                     .padding(start = 16.dp, end = 16.dp, top = 16.dp),
+                
                 categoryTransactionState = state.categoryTransaction,
             )
         }
@@ -222,8 +233,7 @@ private fun DashboardScreenContent(
                                     onAction.invoke(DashboardAction.OpenBudgetDetails(budget))
                                 },
                             name = budget.name,
-                            backgroundColor = budget.iconBackgroundColor.toColor()
-                                .copy(alpha = .1f),
+                            backgroundColor =  Color(0xFFFAD9E6),
                             progressBarColor = budget.progressBarColor,
                             amount = budget.amount.amountString,
                             transactionAmount = budget.transactionAmount.amountString,
@@ -236,14 +246,14 @@ private fun DashboardScreenContent(
             item {
                 EmptyItem(
                     emptyItemText = stringResource(id = com.naveenapps.expensemanager.feature.budget.R.string.no_budget_available_short),
-                    icon = com.naveenapps.expensemanager.core.designsystem.R.drawable.ic_no_budgets,
+                    icon = com.naveenapps.expensemanager.core.designsystem.R.drawable.wallet,
                     modifier = Modifier
                         .fillMaxSize()
                         .height(200.dp)
                 )
             }
         }
-        item {
+       /* item {
             DashboardWidgetTitle(
                 modifier = Modifier
                     .fillMaxWidth()
@@ -288,7 +298,7 @@ private fun DashboardScreenContent(
                         .height(200.dp)
                 )
             }
-        }
+        }*/
         item {
             Spacer(modifier = Modifier.padding(64.dp))
         }

@@ -146,7 +146,7 @@ private fun AccountListScreenContent(
         if (state.accounts.isEmpty()) {
             EmptyItem(
                 emptyItemText = stringResource(id = R.string.no_account_available),
-                icon = com.naveenapps.expensemanager.core.designsystem.R.drawable.ic_no_accounts,
+                icon = com.naveenapps.expensemanager.core.designsystem.R.drawable.wallet,
                 modifier = Modifier.fillMaxSize()
             )
         } else {

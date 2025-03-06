@@ -1,5 +1,8 @@
 package com.naveenapps.expensemanager.feature.settings.advanced
 
+import android.graphics.Color
+import android.graphics.Typeface
+import android.widget.TextView
 import androidx.annotation.StringRes
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Column
@@ -143,12 +146,34 @@ private fun AdvancedSettingsScaffoldView(
                 .padding(innerPadding)
                 .verticalScroll(rememberScrollState()),
         ) {
+
             Text(
                 modifier = Modifier.then(ItemSpecModifier),
-                text = stringResource(id = R.string.default_selected_items),
+                text = ("Learn More About Financial Literacy\n" +
+                        "\n" +
+                        "                What Is Financial Literacy?\n" +
+                        "\n" +
+                        "                Financial literacy is the ability to understand and effectively use various financial skills, including personal financial management, budgeting, and investing. When you are financially literate, you have the essential foundation for a smart relationship with money.\n" +
+                        "\n" +
+                        "                Benefits of Financial Literacy:\n" +
+                        "\n" +
+                        "                • Financial literacy can prevent devastating financial mistakes.\n" +
+                        "                • Financial literacy prepares people for financial emergencies.\n" +
+                        "                • Financial literacy can help individuals reach their goals.\n" +
+                        "                • Financial literacy gives rise to confidence.\n" +
+                        "\n" +
+                        "                How To Become Financially Literate?\n" +
+                        "\n" +
+                        "                Becoming financially literate involves learning and practicing a variety of skills related to budgeting, managing and paying off debts, and understanding credit and investment products. Basic steps to improve your personal finances include creating a budget, keeping track of expenses, making timely payments, being prudent about saving money, periodically checking your credit report, and investing for your future." +
+                        "" +
+                        "" +
+                        ""),
                 style = MaterialTheme.typography.titleMedium,
-                color = MaterialTheme.colorScheme.secondary,
+                color = MaterialTheme.colorScheme.primary,
             )
+
+
+            /*
             if (accounts.isNotEmpty() && selectedAccount != null) {
                 AccountPreSelectionView(
                     accounts = accounts,
@@ -245,7 +270,7 @@ private fun AdvancedSettingsScaffoldView(
                 title = stringResource(id = R.string.accounts_re_order),
                 description = stringResource(id = R.string.accounts_re_order_message),
                 imageVector = Icons.Outlined.Reorder,
-            )
+            )*/
         }
     }
 }

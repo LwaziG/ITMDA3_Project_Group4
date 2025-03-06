@@ -203,7 +203,7 @@ private fun CategoryTransactionListScreenContent(
                         EmptyItem(
                             modifier = Modifier.fillMaxSize(),
                             emptyItemText = stringResource(id = R.string.no_transactions_available),
-                            icon = com.naveenapps.expensemanager.core.designsystem.R.drawable.ic_no_grouping_available
+                            icon = com.naveenapps.expensemanager.core.designsystem.R.drawable.wallet
                         )
                     }
                 } else {

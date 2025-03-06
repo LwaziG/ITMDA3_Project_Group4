@@ -86,7 +86,7 @@ internal class MainActivity : ComponentActivity() {
                     activityComponentProvider,
                     isDarkTheme,
                     if (onBoardingStatus == true) {
-                        ExpenseManagerScreens.Home
+                        ExpenseManagerScreens.IntroScreen
                     } else {
                         ExpenseManagerScreens.IntroScreen
                     }

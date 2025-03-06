@@ -51,7 +51,9 @@ import com.naveenapps.expensemanager.core.model.Amount
 import com.naveenapps.expensemanager.core.model.TransactionType
 import com.naveenapps.expensemanager.feature.category.R
 import com.naveenapps.expensemanager.feature.category.transaction.CategoryTransactionItem
+import com.naveenapps.expensemanager.core.designsystem.AppPreviewsLightAndDarkMode
 
+@AppPreviewsLightAndDarkMode
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun CategoryDetailScreen(

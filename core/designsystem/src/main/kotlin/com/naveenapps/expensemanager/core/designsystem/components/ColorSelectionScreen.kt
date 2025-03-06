@@ -48,7 +48,7 @@ private val colors = listOf(
     "#512DA8",
     "#311B92",
 
-    "#7986CB",
+    /*"#7986CB",
     "#3F51B5",
     "#303F9F",
     "#1A237E",
@@ -106,7 +106,7 @@ private val colors = listOf(
     "#90A4AE",
     "#607D8B",
     "#455A64",
-    "#263238",
+    "#263238", */
 )
 
 @Composable

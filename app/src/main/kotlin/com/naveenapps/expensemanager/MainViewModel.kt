@@ -15,6 +15,7 @@ import kotlinx.coroutines.flow.onEach
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 
+//MainViewModel
 @HiltViewModel
 class MainViewModel @Inject constructor(
     getCurrentThemeUseCase: GetCurrentThemeUseCase,
@@ -29,6 +30,7 @@ class MainViewModel @Inject constructor(
     )
     val currentTheme = _currentTheme.asStateFlow()
 
+    //onboardingStatus
     private val _onboardingStatus = MutableStateFlow<Boolean?>(null)
     val onboardingStatus = _onboardingStatus.asStateFlow()
 

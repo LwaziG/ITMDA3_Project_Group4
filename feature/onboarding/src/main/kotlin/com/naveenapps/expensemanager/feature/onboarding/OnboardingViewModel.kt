@@ -31,7 +31,12 @@ class OnboardingViewModel @Inject constructor(
     private val setOnboardingStatusUseCase: SetOnboardingStatusUseCase,
     private val getFormattedAmountUseCase: GetFormattedAmountUseCase,
     private val composeNavigator: AppComposeNavigator,
+    private val repository: UserRepository
 ) : ViewModel() {
+
+    var loginSuccess: Boolean = false
+        private set
+
 
     private val _state = MutableStateFlow(
         OnboardingState(
@@ -44,7 +49,7 @@ class OnboardingViewModel @Inject constructor(
 
     init {
         viewModelScope.launch {
-            if (getOnboardingStatusUseCase.invoke()) {
+           /* if (getOnboardingStatusUseCase.invoke()) {
                 openHome()
             } else {
                 combine(
@@ -63,14 +68,28 @@ class OnboardingViewModel @Inject constructor(
                         )
                     }
                 }.launchIn(viewModelScope)
-            }
+            }*/
         }
     }
 
     private fun openHome() {
         viewModelScope.launch {
-            setOnboardingStatusUseCase.invoke(true)
+            //setOnboardingStatusUseCase.invoke(true)
             composeNavigator.navigateAndClearBackStack(ExpenseManagerScreens.Home)
+        }
+    }
+
+    fun registerUser(email: String, password: String) {
+        viewModelScope.launch {
+            val user = UserEntity(email = email, password = password)
+            repository.insertUser(user)
+        }
+    }
+
+    fun loginUser(email: String, password: String) {
+        viewModelScope.launch {
+            val user = repository.getUser(email, password)
+            loginSuccess = user != null
         }
     }
 

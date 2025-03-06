@@ -153,10 +153,10 @@ private fun FilterContentView(
         IconButton(onClick = {
             onAction.invoke(FilterAction.ShowTypeFilter)
         }) {
-            Icon(
+            /*Icon(
                 imageVector = Icons.Default.FilterList,
                 contentDescription = null,
-            )
+            )*/
         }
     }
 }

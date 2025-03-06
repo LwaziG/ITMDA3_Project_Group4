@@ -1,5 +1,6 @@
 package com.naveenapps.expensemanager.feature.analysis
 
+import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
@@ -119,7 +120,7 @@ fun TransactionAverageItem(
     averageData: WholeAverageData,
     modifier: Modifier = Modifier,
 ) {
-    Surface(
+     /* Surface(
         modifier = modifier,
         shape = RoundedCornerShape(8.dp),
         tonalElevation = 1.dp,
@@ -171,7 +172,7 @@ fun TransactionAverageItem(
                 )
             }
         }
-    }
+    } */
 }
 
 @Composable
@@ -224,6 +225,7 @@ fun ChartScreen(
     ProvideChartStyle(rememberChartStyle(chartColors, isDarkTheme)) {
         Chart(
             modifier = modifier,
+            //chartModelProducer = rememberChartbackground(Color(0xFFFAD9E6)),
             chart = lineChart(
                 lines = listOf(
                     lineSpec(

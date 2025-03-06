@@ -103,6 +103,7 @@ fun AmountInfoWidget(
         modifier = modifier,
         shape = RoundedCornerShape(8.dp),
         tonalElevation = 1.dp,
+        color = (Color(0xFFFAD9E6)),
     ) {
         Column(
             modifier = Modifier.padding(16.dp),

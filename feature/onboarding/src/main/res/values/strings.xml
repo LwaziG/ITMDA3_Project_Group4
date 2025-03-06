@@ -7,7 +7,7 @@
     <string name="select_main_currency">Select Main Currency</string>
     <string name="add_new">Add New</string>
     <string name="proceed">Proceed</string>
-    <string name="get_started">Get Started</string>
+    <string name="get_started">Login</string>
     <string name="setup">Setup App Settings</string>
     <string name="create_new">Create New</string>
 </resources>

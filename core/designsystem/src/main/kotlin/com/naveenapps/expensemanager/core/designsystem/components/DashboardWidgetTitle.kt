@@ -32,3 +32,26 @@ fun DashboardWidgetTitle(
         }
     }
 }
+
+@Composable
+fun DashboardWidgetTitle1(
+    title: String,
+    modifier: Modifier = Modifier,
+    onViewAllClick: (() -> Unit),
+) {
+    Box(modifier = modifier) {
+        Text(
+            text = title,
+            style = MaterialTheme.typography.headlineSmall,
+        )
+
+            Text(
+                modifier = Modifier
+                    .align(Alignment.CenterEnd)
+                    .clickable { onViewAllClick.invoke() },
+                text = stringResource(id = R.string.view_all).uppercase(),
+                style = MaterialTheme.typography.labelMedium,
+            )
+
+    }
+}

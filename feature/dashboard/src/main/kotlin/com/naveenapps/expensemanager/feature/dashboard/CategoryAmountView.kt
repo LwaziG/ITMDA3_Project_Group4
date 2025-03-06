@@ -15,23 +15,27 @@ import androidx.compose.ui.unit.dp
 import androidx.core.graphics.toColorInt
 import com.naveenapps.expensemanager.core.designsystem.AppPreviewsLightAndDarkMode
 import com.naveenapps.expensemanager.core.designsystem.components.DashboardWidgetTitle
+import com.naveenapps.expensemanager.core.designsystem.components.DashboardWidgetTitle1
 import com.naveenapps.expensemanager.core.designsystem.ui.components.PieChartUiData
 import com.naveenapps.expensemanager.core.designsystem.ui.components.PieChartView
 import com.naveenapps.expensemanager.core.designsystem.ui.theme.ExpenseManagerTheme
 import com.naveenapps.expensemanager.core.model.CategoryTransactionState
 import com.naveenapps.expensemanager.feature.category.transaction.CategoryTransactionSmallItem
+import com.naveenapps.expensemanager.feature.category.transaction.CategoryTransactionTabScreen
 import com.naveenapps.expensemanager.feature.category.transaction.getRandomCategoryTransactionData
 
 @Composable
 fun CategoryAmountView(
     modifier: Modifier = Modifier,
     categoryTransactionState: CategoryTransactionState,
+    //onAction: (DashboardAction) -> Unit,
 ) {
     Column(modifier = modifier) {
         DashboardWidgetTitle(
             modifier = Modifier.fillMaxWidth(),
             title = stringResource(id = R.string.categories),
         )
+
         Row(
             modifier = Modifier
                 .padding(top = 16.dp)
@@ -83,6 +87,7 @@ fun CategoryAmountViewPreview() {
                     .fillMaxWidth()
                     .padding(16.dp),
                 categoryTransactionState = getRandomCategoryTransactionData(),
+
             )
         }
     }
