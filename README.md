@@ -11,12 +11,12 @@ PennyWise
 [![API](https://img.shields.io/badge/API-21%2B-brightgreen.svg?style=flat)](https://android-arsenal.com/api?level=21)
 [![Build](https://github.com/nkuppan/expensemanager/actions/workflows/build.yml/badge.svg)](https://github.com/nkuppan/expensemanager/actions/workflows/build.yml)
 
-This is the repository for the [PennyWise]🚧.
-
 **PennyWise** is a fully functional Android app built entirely with Kotlin and Jetpack
-Compose. It follows Android design and development best practices and is intended to be a useful
-reference for developers. As a running app, it's intended to help developers keep up-to-date with
-the world of Android development by providing regular news updates.
+Compose. 
+
+It follows Android design and development best practices and is intended to help users manage their finances. 
+
+Users can track their expenses, income and set monthly budgets. PennyWise is built to educate users about financial literacy and practicing healthy spending.
 
 **Features**
 
@@ -36,7 +36,7 @@ the world of Android development by providing regular news updates.
 | <img src="docs/images/image5.png" width="250px"/> | <img src="docs/images/image6.png" width="250px"/> | <img src="docs/images/image7.png" width="250px"/> | <img src="docs/images/image8.png" width="250px"/> | 
 
 ## Android development
-Expense Manager attempts to make use of the latest Android libraries and best practices:
+PennyWise attempts to make use of the latest Android libraries and best practices:
 
 * Completely written in [Jetpack Compose](https://developer.android.com/jetpack/compose)
 * Entirely written in [Kotlin](https://kotlinlang.org/) (
