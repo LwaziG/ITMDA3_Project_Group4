@@ -20,12 +20,12 @@ Users can track their expenses, income and set monthly budgets. PennyWise is bui
 
 **Features**
 
-* Users can create multiple accounts to group their transactions under specific accounts
-* Create monthly budgets and find extra budget customimizing options
+* Users can create multiple accounts to group their transactions under specific accounts.
+* Create monthly budgets and find extra budget customizing options.
 * Analyse and know the trends of your transactions on a day, week and monthly wise.
 * Interactive category grouping pie chart to understand where you are mostly spending your money.
-* Multiple currency switching in UI (Currency conversion is yet to be supported)
-* Export your transactions into csv format (pdf will be added soon)
+* Multiple currency switching in UI.
+* Export your transactions into csv format.
 
 |                    Home Screen                    |                  Analysis Screen                  |                Transaction Screen                 |               Category Chart Screen               |
 |:-------------------------------------------------:|:-------------------------------------------------:|:-------------------------------------------------:|:-------------------------------------------------:|
@@ -57,5 +57,3 @@ Aphumelele Sineke
 Zizipho Kakaza  
 Lwazi Gumede 
 
-Please feel free to file an issue for errors, suggestions or feature requests. Pull requests are
-also encouraged.
